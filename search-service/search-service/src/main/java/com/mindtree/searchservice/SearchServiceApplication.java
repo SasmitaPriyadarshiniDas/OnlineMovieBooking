@@ -8,8 +8,9 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableMongoRepositories(basePackages="com.mindtree.*")
-@ComponentScan(basePackages= {"com.mindtree.*"})
+//@EnableMongoRepositories(basePackages= {"com.mindtree.searchservice.mongo.repository"})
+@EnableMongoRepositories(basePackages= {"com.mindtree.searchservice.repository"})
+@ComponentScan(basePackages= {"com.mindtree.searchservice.*"})
 public class SearchServiceApplication {
 
 	public static void main(String[] args) {
