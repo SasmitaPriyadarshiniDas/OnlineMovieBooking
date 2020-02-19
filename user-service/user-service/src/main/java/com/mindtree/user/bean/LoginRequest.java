@@ -2,8 +2,6 @@ package com.mindtree.user.bean;
 
 import java.util.Set;
 
-
-
 public class LoginRequest {
 	
 	private String username;
